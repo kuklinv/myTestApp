@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public title = 'myApp';
+  public color = 'red';
+  public myClass = 'colorBlue';
+  public textSize = 150;
   constructor() { }
+  changeColor(color) {
 
+  }
   ngOnInit() {
   }
 
