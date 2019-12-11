@@ -13,10 +13,18 @@
 
           <div class="sidebox">
             <h3 class="sidebox-title">DEVCOD.PRO</h3>
-            <p>home works!</p>
-            <h1>Hello! {{title}}</h1>
-            <p>its my first app</p>
+            <p [style.color]="color">home works!</p>
+            <h1 class="colorBlue">Hello! {{title}}</h1>
+            <p [class] = "myClass">its my first app</p>
             <p>Angular is awesome!</p>
+            <p (click)="changeColor('yellow')" [style.color]="myColor">Click me for new color</p>
+<!--            <label>-->
+<!--              <input type="text" (input)="changeColor($event.target.value)">-->
+<!--            </label>-->
+            <label>
+              <input type="text" #colorValue>
+            </label>
+            <button (click)="changeColor(colorValue.value)" >CHANGE INPUT COLOR</button>
             <p>Я Виталий Куклин, веб-разработчик. Это моя личная страничка = (все в одном) =>
               визитная карточка, экспериментальная площадка, учебная песочница и портфолио</p>
           </div>
