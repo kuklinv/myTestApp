@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   public title = 'myApp';
   public color = 'red';
+  public myColor = 'blue';
   public myClass = 'colorBlue';
-  public textSize = 150;
-  constructor() { }
-  changeColor(color) {
+  // public textSize = 150;
+  changeColor(color){
+    this.myColor = color;
+  }
+  constructor() {
 
   }
   ngOnInit() {
   }
-
 }
