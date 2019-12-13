@@ -6,14 +6,6 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public user = {
-    name: 'Vitaly'
-  };
-  public isShown = true;
-
-  toggle() {
-    this.isShown = !this.isShown;
-  }
 
   constructor() {
 
