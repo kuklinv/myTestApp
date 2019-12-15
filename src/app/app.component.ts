@@ -9,6 +9,7 @@ export class AppComponent implements OnInit {
   public user = {
     name: 'Vitaly'
   };
+
   public isShown = true;
 
   toggle() {
