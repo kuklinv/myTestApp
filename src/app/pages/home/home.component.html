@@ -29,12 +29,11 @@
             <p>hello {{user?.name}} from App.component</p>
             <ul>
               <li *ngFor="let  user of users">
-                <app-user-card [userCard]="user" (userBeenSelected)="selectedUser = user"></app-user-card>
+                <app-user-card id="card" [userCard]="user" (userBeenSelected)="selectedUser = user"></app-user-card>
               </li>
             </ul>
             <h2>{{selectedUser?.name}}</h2>
-            <h3>Content from home component</h3>
-
+            <h3>Content from home component live test</h3>
 
             <!--            Sandbox screencast-->
 

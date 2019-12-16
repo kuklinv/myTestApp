@@ -14,6 +14,8 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SandboxComponent } from './pages/sandbox/sandbox.component';
 import { UserCardComponent } from './pages/home/user-card/user-card.component';
+import { ColoryDirective } from './colory.directive';
+import { DelayDirective } from './delay.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { UserCardComponent } from './pages/home/user-card/user-card.component';
     ProjectsComponent,
     SandboxComponent,
     UserCardComponent,
+    ColoryDirective,
+    DelayDirective,
   ],
   imports: [
     BrowserModule,
