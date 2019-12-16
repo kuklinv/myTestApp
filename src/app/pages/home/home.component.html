@@ -15,9 +15,9 @@
             <!--            Sandbox screencast-->
 
             <p [style.color]="color">home works!</p>
-            <h1 class="colorBlue">Hello! {{title}}</h1>
+            <h1 class="colorBlue" appColory #colorEl2='setcolory'>Hello! {{title}}</h1>
             <p [class]="myClass">its my first app</p>
-            <p>Angular is awesome!</p>
+            <p appColory #colorEl3 = 'setcolory'>Angular is awesome!</p>
             <p (click)="changeColor('yellow')" [style.color]="myColor">Click me for new color</p>
             <!--            <label>-->
             <!--              <input type="text" (input)="changeColor($event.target.value)" // its variant with $event>-->
@@ -33,7 +33,8 @@
               </li>
             </ul>
             <h2>{{selectedUser?.name}}</h2>
-            <h3>Content from home component live test</h3>
+            <h3 appColory #coloryEl1 = "setcolory">Content from home component live test</h3>
+            <button (click)="coloryEl1.setColor(); colorEl2.setColor(); colorEl3.setColor()">Set random color for content up</button>
 
             <!--            Sandbox screencast-->
 

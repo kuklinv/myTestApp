@@ -10,7 +10,7 @@ export class UserCardComponent implements OnInit {
   @Output() userBeenSelected: EventEmitter<any> = new  EventEmitter();
 
   onUserCardClick() {
-    this.userBeenSelected.emit()
+    this.userBeenSelected.emit();
   };
 
   constructor() {

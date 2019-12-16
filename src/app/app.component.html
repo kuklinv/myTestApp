@@ -1,6 +1,6 @@
 <div class="container-fluid mainComponent">
   <p>Hello {{user.name}}</p>
-  <app-home *ngIf="isShown" [user]="user"></app-home>
   <button (click)="toggle()">toggle</button>
-
+  <app-home *ngIf="isShown" [user]="user"></app-home>
+  <app-footer></app-footer>
 </div>
