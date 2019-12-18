@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {UserService} from '../../service/user.service';
 
 @Component({
   selector: 'app-home',
@@ -6,27 +7,24 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() {
-
-  }
-
   @Input() user;
   public title = 'myApp';
   public color = 'red';
   public myColor = 'blue';
   public myClass = 'colorBlue';
-  public users = [
-    {name: 'John'},
-    {name: 'Ivan'},
-    {name: 'Sara'}
-  ];
-  public  selectedUser;
+  public selectedUser;
+  private  _userServise;
+  public users;
+
+  constructor(ourUsers: UserService) {
+    this._userServise = ourUsers;
+  }
 
   changeColor(color) {
     this.myColor = color;
   }
 
   ngOnInit() {
+    this.users = this._userServise.getAll();
   }
 }
