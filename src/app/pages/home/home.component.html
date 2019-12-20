@@ -17,7 +17,7 @@
             <p [style.color]="color">home works!</p>
             <h1 class="colorBlue" appColory #colorEl2='setcolory'>Hello! {{title}}</h1>
             <p [class]="myClass">its my first app</p>
-            <p appColory #colorEl3 = 'setcolory'>Angular is awesome!</p>
+            <p appColory #colorEl3='setcolory'>Angular is awesome!</p>
             <p (click)="changeColor('yellow')" [style.color]="myColor">Click me for new color</p>
             <!--            <label>-->
             <!--              <input type="text" (input)="changeColor($event.target.value)" // its variant with $event>-->
@@ -29,12 +29,20 @@
             <p>hello {{user?.name}} from App.component</p>
             <ul>
               <li *ngFor="let  user of users">
-                <app-user-card id="card" [userCard]="user" (userBeenSelected)="selectedUser = user"></app-user-card>
+                <app-user-card id="card" [userCard]="user" (userBeenSelected)="selectedUser = user">
+                </app-user-card>
+                <span (click)="removeUser(user.name)">x</span>
               </li>
             </ul>
+            <label>
+              <input type="text" #userName>
+            </label>
+            <button (click)="addUser(userName.value); userName.value=' ';">add User</button>
             <h2>{{selectedUser?.name}}</h2>
-            <h3 appColory #coloryEl1 = "setcolory">Content from home component live test</h3>
-            <button (click)="coloryEl1.setColor(); colorEl2.setColor(); colorEl3.setColor()">Set random color for content up</button>
+            <h3 appColory #coloryEl1="setcolory">Content from home component live test</h3>
+            <button (click)="coloryEl1.setColor(); colorEl2.setColor(); colorEl3.setColor()">Set random color for
+              content up
+            </button>
 
             <!--            Sandbox screencast-->
 

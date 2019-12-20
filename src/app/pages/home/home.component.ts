@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   public myColor = 'blue';
   public myClass = 'colorBlue';
   public selectedUser;
-  private  _userServise;
+  private _userServise;
   public users;
 
   constructor(ourUsers: UserService) {
@@ -22,6 +22,16 @@ export class HomeComponent implements OnInit {
 
   changeColor(color) {
     this.myColor = color;
+  }
+
+  removeUser(name: string) {
+    this._userServise.remove(name);
+    this.users = this._userServise.getAll();
+  }
+
+  addUser(name: string) {
+    this._userServise.add(name);
+    this.users = this._userServise.getAll();
   }
 
   ngOnInit() {
