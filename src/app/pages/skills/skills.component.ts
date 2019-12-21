@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CarouselComponent} from './carousel/carousel.component';
+import {NgbdCarouselBasic} from './carousel/carousel.component';
 
 @Component({
   selector: 'app-skills',
