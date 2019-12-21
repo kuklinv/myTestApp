@@ -1,6 +1,10 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+// import {ReflectiveInjector, Injector} from '@angular/core';
+//
+// const injector = ReflectiveInjector.resolveAndCreate([{provide: UserService, useClass: UserService}]);
+// const UserService = injector.get(UserService);
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -43,7 +47,9 @@ import {UserService} from './service/user.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [UserService],
+  providers: [
+    {provide: UserService, useClass: UserService} // короткая запись просто  UserService
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
