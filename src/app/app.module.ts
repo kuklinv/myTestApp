@@ -15,6 +15,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SandboxComponent } from './pages/sandbox/sandbox.component';
+import { LearnComponent } from './pages/learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SandboxComponent } from './pages/sandbox/sandbox.component';
     BlogComponent,
     PortfolioComponent,
     ProjectsComponent,
-    SandboxComponent
+    SandboxComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,
