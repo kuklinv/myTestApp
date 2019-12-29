@@ -15,7 +15,7 @@ import {
   }
 )
 
-export class NgbdCarouselBasic {
+  export class NgbdCarouselBasic {
   images = ["https://picsum.photos/900/500?random&t=1",
     "https://picsum.photos/900/500?random&t=2",
     "https://picsum.photos/900/500?random&t=3"]
