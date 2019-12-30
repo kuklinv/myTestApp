@@ -1,6 +1,7 @@
 {
-  "name": "myapp",
-  "version": "0.0.0",
+  "name": "myDevCodAppAngular",
+  "author": "Kuklin Vitaly",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
