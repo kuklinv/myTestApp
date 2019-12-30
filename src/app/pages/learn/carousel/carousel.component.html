@@ -1,31 +1,39 @@
-<div class="container-fluid">
-  <ngb-carousel #carousel="ngbCarousel" *ngIf="images" interval=0 wrap="true">
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img  class="carouselImage" [src]="images[0]" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper carouselImage">
-        <img  class="carouselImage" [src]="images[1]" alt="Random second slide">
-      </div>
-      <div class="carousel-caption carouselImage">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper carouselImage">
-        <img class="carouselImage" [src]="images[2]" alt="Random third slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
+<div class="span4 sidebar">
+  <div class="sidebox">
+    <ul class="list-unstyled">
+      <li class="media">
+        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder7.jpg"
+             alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in
+          vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+          congue felis in faucibus.
+        </div>
+      </li>
+      <li class="media my-4">
+        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg"
+             alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in
+          vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+          congue felis in faucibus.
+        </div>
+      </li>
+      <li class="media">
+        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg"
+             alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1 font-weight-bold">List-based media object</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in
+          vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+          congue felis in faucibus.
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
