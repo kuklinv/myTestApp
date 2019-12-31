@@ -1,6 +1,11 @@
-.carouselImage { min-width:100%; max-width:100%; }
-::ng-deep .container-fluid { padding:0 !important; }
+/*.carouselImage { min-width:100%; max-width:100%; }*/
+/*::ng-deep .container-fluid { padding:0 !important; }*/
 
+.mediaImage {
+  height: 150px;
+  width: 150px;
+}
+/*/static/frontend/cli-build/icons.svg?30.11.1577710390579#logo*/
 /*@import "~assets/fontawesome/css/font-awesome.css";*/
 /*@import "src/styles.css";*/
 /*.carousel-item {*/
