@@ -8,6 +8,12 @@ body {
 } */
 /***** BASE CSS *****/
 
+/*.loading {*/
+/*  text-align: center;*/
+/*  align-content: center;*/
+/*  content: ;*/
+/*}*/
+
 .span12 {
   align-content: center;
 }
