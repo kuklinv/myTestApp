@@ -13,6 +13,10 @@ body {
 /*  align-content: center;*/
 /*  content: ;*/
 /*}*/
+.mediaImage {
+  height: 100px;
+  width: 150px;
+}
 
 .span12 {
   align-content: center;
