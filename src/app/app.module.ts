@@ -16,6 +16,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SandboxComponent } from './pages/sandbox/sandbox.component';
 import { LearnComponent } from './pages/learn/learn.component';
+import { WeatherComponent } from './pages/projects/weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LearnComponent } from './pages/learn/learn.component';
     PortfolioComponent,
     ProjectsComponent,
     SandboxComponent,
-    LearnComponent
+    LearnComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
