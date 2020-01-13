@@ -9,19 +9,23 @@
           <div class="sidebox">
 
             <!--            Sandbox screencast-->
-
+<div class="row-cols-3">
+  <div class="cols-4">
             <p [style.color]="color">home works!</p>
             <p #colorEl2='setcolory' appColory class="colorBlue">Hello! {{title}}</p>
+    </div>
+    <div class="cols-4">
             <p [class]="myClass">its my first app</p>
             <p #colorEl3='setcolory' appColory>Angular is awesome!</p>
+      </div>
+    <div class="cols-4">
             <p (click)="changeColor('yellow')" [style.color]="myColor">Click me for new color</p>
-            <!--            <label>-->
-            <!--              <input type="text" (input)="changeColor($event.target.value)" // its variant with $event>-->
-            <!--            </label>-->
             <label>
               <input #colorValue type="text">
             </label>
             <button (click)="changeColor(colorValue.value)">CHANGE INPUT COLOR</button>
+  </div>
+</div>
             <p>hello {{user?.name}} from App.component</p>
             <ul>
               <li *ngFor="let  user of users">
