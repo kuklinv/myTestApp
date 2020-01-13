@@ -1,6 +1,12 @@
 <div class="container-fluid mainComponent">
-  <p>Hello {{user.name}}</p>
+  <div class="row-cols-1">
+    <h1>
+      <p>Hello {{user.name}}</p>
+      </h1>
+
   <button (click)="toggle()">toggle</button>
   <app-home *ngIf="isShown" [user]="user"></app-home>
-<!--  <app-footer></app-footer>-->
+    <!--  <app-footer></app-footer>-->
+  </div>
+
 </div>

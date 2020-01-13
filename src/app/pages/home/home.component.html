@@ -3,43 +3,39 @@
 <div class="container-fluid mainPageContent">
 
   <div class="divPanel page-content">
-
     <div class="row-fluid">
-
       <div class="span12" id="divMain">
-
         <div class="span4 sidebar">
-
           <div class="sidebox">
 
             <!--            Sandbox screencast-->
 
             <p [style.color]="color">home works!</p>
-            <p class="colorBlue" appColory #colorEl2='setcolory'>Hello! {{title}}</p>
+            <p #colorEl2='setcolory' appColory class="colorBlue">Hello! {{title}}</p>
             <p [class]="myClass">its my first app</p>
-            <p appColory #colorEl3='setcolory'>Angular is awesome!</p>
+            <p #colorEl3='setcolory' appColory>Angular is awesome!</p>
             <p (click)="changeColor('yellow')" [style.color]="myColor">Click me for new color</p>
             <!--            <label>-->
             <!--              <input type="text" (input)="changeColor($event.target.value)" // its variant with $event>-->
             <!--            </label>-->
             <label>
-              <input type="text" #colorValue>
+              <input #colorValue type="text">
             </label>
             <button (click)="changeColor(colorValue.value)">CHANGE INPUT COLOR</button>
             <p>hello {{user?.name}} from App.component</p>
             <ul>
               <li *ngFor="let  user of users">
-                <app-user-card id="card" [userCard]="user" (userBeenSelected)="selectedUser = user">
+                <app-user-card (userBeenSelected)="selectedUser = user" [userCard]="user" id="card">
                 </app-user-card>
                 <span (click)="removeUser(user.name)">x</span>
               </li>
             </ul>
             <label>
-              <input type="text" #userName>
+              <input #userName type="text">
             </label>
             <button (click)="addUser(userName.value); userName.value=' ';">add User</button>
             <h2>{{selectedUser?.name}}</h2>
-            <h3 appColory #coloryEl1="setcolory">Content from home component live test</h3>
+            <h3 #coloryEl1="setcolory" appColory>Content from home component live test</h3>
             <button (click)="coloryEl1.setColor(); colorEl2.setColor(); colorEl3.setColor()">Set random color for
               content up
             </button>
