@@ -23,7 +23,7 @@ import {UserCardComponent} from './pages/home/user-card/user-card.component';
 import {ColoryDirective} from './directives/colory.directive';
 import {DelayDirective} from './directives/delay.directive';
 
-import {UserService} from './service/user.service';
+import {UserService} from './services/user.service';
 
 @NgModule({
   declarations: [
