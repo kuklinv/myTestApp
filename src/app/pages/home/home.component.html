@@ -10,15 +10,15 @@
 
             <!--            Sandbox screencast-->
 <div class="row-cols-3">
-  <div class="cols-4">
-            <p [style.color]="color">home works!</p>
-            <p #colorEl2='setcolory' appColory class="colorBlue">Hello! {{title}}</p>
-    </div>
-    <div class="cols-4">
+  <div class="col-3">
+    <p [style.color]="color">home works!</p>
+    <p #colorEl2='setcolory' appColory class="colorBlue">Hello! {{title}}</p>
+  </div>
+    <div class="col-3">
             <p [class]="myClass">its my first app</p>
             <p #colorEl3='setcolory' appColory>Angular is awesome!</p>
       </div>
-    <div class="cols-4">
+    <div class="col-3">
             <p (click)="changeColor('yellow')" [style.color]="myColor">Click me for new color</p>
             <label>
               <input #colorValue type="text">
